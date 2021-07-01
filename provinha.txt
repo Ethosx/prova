@@ -1,0 +1,115 @@
+/**
+ * Questão 1:
+ * 
+ * Suponhamos que tenha este array númerico [1, 2, 3, 4, 3, 7, 9, 10], faça um algoritmo em JS para
+ * imprimir uma linha no console falando qual o número que se repete neste array
+ */
+
+/**
+ * Questão 2:
+ * 
+ * Crie uma tela contendo 4 retângulos. Esses retângulos devem representar um cabeçalho, um menu lateral, um
+ * corpo principal e um rodapé. Utilize cores diferentes para serem melhor identificados.
+ * Disponha-os de acordo com o layout: Cabeçalho no topo, menu lateral à esquerda, corpo principal no meio 
+ * (ocupando o espaço não preenchido das outras divs) e o rodapé anexado ao fim da página.
+ * 
+ * Para essa questão, utilize o layout de flexbox ou grid-layout.
+ */
+
++----------------------+
+|       CABEÇALHO      |
++---+------------------+
+|   |                  |
+| m |                  |
+| e |    CORPO         |
+| n |                  |
+| u |                  |
+|   |                  |
++---+------------------+
+|        RODAPÉ        |
++----------------------+
+
+
+/**
+ * Questão 3:
+ * Crie um HTML básico, utilizando AngularJS. Agora utilize a API mock, https://jsonplaceholder.typicode.com/users
+ * para ter uma lista de usuários. Monte uma tabela que contenham as seguintes colunas:
+ * - ID (id)
+ * - Nome (name)
+ * - Email (email)
+ * - Nome da empresa (company)
+ * - Endereço (address) - Obs.: O endereço deve concatenar a rua, e o complemento (address.street, address.suite)
+ */
+
+/**
+ * Questão 4:
+ * Suponha que você possui o seguinte array de objetos:
+ * [
+      {
+        type: 'products',
+        costCenter: '002.102.1.98',
+        category: 'cars',
+        products: [
+          {
+            id: 'F1',
+            description: 'Ferrari F430',
+            price: 790000,
+            active: true,
+          },
+          {
+            id: 'L1',
+            description: 'Lamborghini Aventador',
+            price: 4499900,
+            active: false,
+          },
+          {
+            id: 'P1',
+            description: 'Porsche 911 Carrera S',
+            price: 950000,
+            active: true,
+          },
+          {
+            id: 'P2',
+            description: 'Porsche Boxster',
+            price: 198000,
+            active: true,
+          },
+          {
+            id: 'A1',
+            description: 'Audi RS4',
+            price: 489000,
+            active: false,
+          },
+          {
+            id: 'M1',
+            description: 'Mercedes Benz AMG GT',
+            price: 1390000,
+            active: true,
+          },
+          {
+            id: 'A2',
+            description: 'Audi TTS',
+            price: 158900,
+            active: false,
+          }
+        ]
+      }
+    ]
+ * 
+ * Agora crie um script que mostre a lista de carros que estejam com o status true, na lista deverá ter os seguintes dados:
+ * - Descrição (description)
+ * - Preço (price) - Obs.: Este deverá estar com formato de máscara BRL
+ * 
+ * E também, deverá imprimir uma ultima informação chamada "Valor em Estoque", que deve somar o valor de todos
+ * os carros que possuam status true.
+ */
+
+// SOLUÇÃO DE EXEMPLO:
+const array = [1, 2, 3, 4, 3, 7, 9, 10];
+
+for(let item of a) {
+  if(a.filter((o) => o === item).length > 1) {
+    console.log(`O número que repete é: ${ item }`);
+    break;
+  } 
+}
