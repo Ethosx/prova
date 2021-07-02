@@ -103,13 +103,3 @@
  * E também, deverá imprimir uma ultima informação chamada "Valor em Estoque", que deve somar o valor de todos
  * os carros que possuam status true.
  */
-
-// SOLUÇÃO DE EXEMPLO:
-const array = [1, 2, 3, 4, 3, 7, 9, 10];
-
-for(let item of a) {
-  if(a.filter((o) => o === item).length > 1) {
-    console.log(`O número que repete é: ${ item }`);
-    break;
-  } 
-}
